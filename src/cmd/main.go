@@ -1,10 +1,10 @@
 package main
 
 import (
-	"golang-devcontainer/src/shell"
+	"cleffy/src/router"
 )
 
 func main() {
-	shell := shell.NewCalculateShell()
-	shell.Execute()
+	r := router.GetRouter()
+	r.Run(":8080")
 }
