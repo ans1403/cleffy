@@ -1,6 +1,6 @@
-FROM golang:1.18.1-bullseye
+FROM golang:1.18.3-bullseye
 
-WORKDIR /usr/local/golang-devcontainer
+WORKDIR /usr/local/cleffy
 
 RUN go install -v golang.org/x/tools/gopls@latest && \
     go install -v github.com/ramya-rao-a/go-outline@latest && \
